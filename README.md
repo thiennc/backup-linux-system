@@ -20,6 +20,7 @@ Sử dụng những scripts này để tạo ra bản backup các folders/files 
 2. Sử dụng bộ keys đã tạo ở bước 1 để backup hệ thống
     - Đổi tên *PROJECT_NAME, PUBLIC_IP, BACKUP_PATH* theo vị trí tạo ra bản backup mà bạn mong muốn ở file **script-backup-system.sh**
     - Đổi tên *ENCRYPT_KEY* giống với backup-key ở bước 1
+    - Thêm hoặc sửa những vị trí bạn muốn backup trong file **script-backup-system.sh**
     - Chạy lệnh *sh script-backup-system.sh* sau đó kiểm tra xem có tạo ra file định dạng .enc không, đây là file bản backup đã mã hóa với key bạn tạo ra
       ```
       sh script-backup-system.sh
