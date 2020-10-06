@@ -1,5 +1,5 @@
 #!/bin/sh
-PROJECT_NAME="project1"
+PROJECT_NAME="sample-project"
 PUBLIC_IP="123.123.123.123"
 BACKUP_PATH="/home/backup/"
 BACKUP_FOLDER="backup-system-"$PROJECT_NAME"-"$PUBLIC_IP"-$(date +"%Y%m%d")"
