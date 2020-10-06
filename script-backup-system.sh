@@ -1,12 +1,12 @@
 #!/bin/sh
 PROJECT_NAME="project1"
 PUBLIC_IP="123.123.123.123"
-BACKUP_PATH="/home/backup/manualbackup/"
+BACKUP_PATH="/home/backup/"
 BACKUP_FOLDER="backup-system-"$PROJECT_NAME"-"$PUBLIC_IP"-$(date +"%Y%m%d")"
 
+mkdir -p $BACKUP_PATH
 cd $BACKUP_PATH
-mkdir $BACKUP_FOLDER
-mkdir $BACKUP_FOLDER/etc
+mkdir -p $BACKUP_FOLDER/etc
 cp -r /etc/nginx $BACKUP_FOLDER/etc
 cp -r /etc/apache2 $BACKUP_FOLDER/etc
 cp -r /etc/default $BACKUP_FOLDER/etc
@@ -16,8 +16,7 @@ cp /etc/hosts $BACKUP_FOLDER/etc
 cp /etc/passwd $BACKUP_FOLDER/etc
 cp /etc/rc.local $BACKUP_FOLDER/etc
 
-mkdir $BACKUP_FOLDER/var
-mkdir $BACKUP_FOLDER/var/spool
+mkdir -p $BACKUP_FOLDER/var/spool
 cp -r /var/spool/cron $BACKUP_FOLDER/var/spool
 
 tar -czvf $BACKUP_FOLDER.tar.gz $BACKUP_FOLDER
