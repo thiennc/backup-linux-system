@@ -48,3 +48,8 @@ Sử dụng những scripts này để tạo ra bản backup các folders/files 
 
 - openssl
 - tar
+
+### Tham khảo nếu muốn đưa tự động backup lên google drive
+- https://github.com/prasmussen/gdrive#downloads
+- https://stackoverflow.com/questions/33063673/bash-script-to-backup-data-to-google-drive
+- https://timothy-quinn.com/backing-up-a-directory-to-google-drive-on-centos-7/
